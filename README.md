@@ -32,7 +32,7 @@ TecnoNeto é um site profissional para serviços de suporte técnico em informá
 1. Clone o repositório:
 
 ```shellscript
-git clone https://github.com/seu-usuario/tecnoneto.git
+git clone https://github.com/ThiagoPenaloza/tecnoneto.git
 cd tecnoneto
 ```
 
