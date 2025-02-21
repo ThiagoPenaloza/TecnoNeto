@@ -1,4 +1,3 @@
-```markdown
 # TecnoNeto - Suporte Técnico em Informática
 
 ## 📋 Sobre o Projeto
