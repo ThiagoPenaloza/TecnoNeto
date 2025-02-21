@@ -1,5 +1,4 @@
-# TecnoNeto - Suporte Técnico em Informática
-
+# TecnoNeto
 ## 📋 Sobre o Projeto
 
 TecnoNeto é um site profissional para serviços de suporte técnico em informática, desenvolvido com Next.js 14 e Tailwind CSS. O site é totalmente responsivo e otimizado para SEO, oferecendo uma experiência de usuário moderna e profissional.
