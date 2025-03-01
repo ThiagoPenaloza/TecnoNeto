@@ -33,7 +33,7 @@ export default function Home() {
           </nav>
           <Button className="hidden md:inline-flex">
             <Link href="#contato">Contato</Link>
-            </Button>
+          </Button>
         </div>
       </header>
 
@@ -53,10 +53,14 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col sm:flex-row gap-2 justify-center lg:justify-start">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
+                  <Link href="#contato">
                     Entre em Contato
+                  </Link>
                   </Button>
                   <Button size="lg" variant="outline">
+                    <Link href="#servicos">
                     Nossos Serviços
+                    </Link>
                   </Button>
                 </div>
               </div>
@@ -225,7 +229,7 @@ export default function Home() {
                   <MapPin className="h-6 w-6 text-primary" />
                   <div>
                     <h3 className="font-bold">Endereço</h3>
-                    <p className="text-muted-foreground">Porto Alegre, RS</p>
+                    <p className="text-muted-foreground">Rua Carazinho 145, Petrópolis <br></br> Porto Alegre, RS</p>
                   </div>
                 </div>
               </div>
@@ -240,7 +244,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="w-full border-t py-6">
         <div className="container flex flex-col items-center justify-between gap-4 px-4 text-center md:flex-row md:text-left">
-          <p className="text-sm leading-loose">© 2024 TecnoNeto. Todos os direitos reservados.</p>
+          <p className="text-sm leading-loose">© 2025 TecnoNeto. Todos os direitos reservados.</p>
         </div>
       </footer>
 

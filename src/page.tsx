@@ -4,7 +4,6 @@ import { Textarea } from "@/components/ui/textarea"
 import { Laptop, Wrench, MonitorSmartphone, Users, Phone, Mail, MapPin } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
-import { MobileNav } from "@/components/mobile-nav"
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-2xl font-bold text-primary">TecnoNeto</span>
           </Link>
-          <MobileNav />
           <nav className="hidden md:flex gap-6">
             <Link href="#inicio" className="text-sm font-medium hover:text-primary">
               Início
@@ -36,33 +34,33 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section id="inicio" className="w-full py-8 md:py-12 lg:py-24 bg-gradient-to-b from-primary/5 to-transparent">
+        <section id="inicio" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-primary/5 to-transparent">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-              <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
+              <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
-                  <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] leading-tight">
+                  <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
                     Suporte Técnico Profissional em Informática
                   </h1>
-                  <p className="max-w-[600px] text-muted-foreground md:text-xl mx-auto lg:mx-0">
+                  <p className="max-w-[600px] text-muted-foreground md:text-xl">
                     Soluções completas em manutenção de computadores, instalação de Windows e montagem de PCs
                   </p>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-2 justify-center lg:justify-start">
+                {/* <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <Button size="lg" className="bg-primary hover:bg-primary/90">
                     Entre em Contato
                   </Button>
                   <Button size="lg" variant="outline">
                     Nossos Serviços
                   </Button>
-                </div>
+                </div> */}
               </div>
               <Image
                 src="/placeholder.svg"
                 alt="Suporte Técnico"
                 width={600}
                 height={400}
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover order-first lg:order-last"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover"
               />
             </div>
           </div>
@@ -79,7 +77,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-4 max-w-5xl mt-8 px-4">
+            <div className="mx-auto grid gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-4 max-w-5xl mt-8">
               <div className="flex flex-col items-center space-y-2 border rounded-lg p-4 hover:shadow-lg transition-shadow">
                 <Wrench className="h-12 w-12 text-primary" />
                 <h3 className="text-xl font-bold">Manutenção</h3>
@@ -107,10 +105,10 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section id="sobre" className="w-full py-8 md:py-12 lg:py-24 bg-gradient-to-b from-primary/5 to-transparent">
+        <section id="sobre" className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-primary/5 to-transparent">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-              <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
+              <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Sobre a TecnoNeto</h2>
                   <p className="max-w-[600px] text-muted-foreground md:text-xl">
@@ -184,14 +182,14 @@ export default function Home() {
                 alt="Sobre TecnoNeto"
                 width={600}
                 height={400}
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover order-first lg:order-last"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover"
               />
             </div>
           </div>
         </section>
 
         {/* Contact Section */}
-        <section id="contato" className="w-full py-8 md:py-12 lg:py-24">
+        <section id="contato" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -201,8 +199,8 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mx-auto grid max-w-5xl gap-8 py-8 lg:grid-cols-2">
-              <div className="space-y-6">
+            <div className="mx-auto grid max-w-5xl gap-6 py-8 lg:grid-cols-2">
+              <div className="space-y-4">
                 <div className="flex items-center space-x-4">
                   <Phone className="h-6 w-6 text-primary" />
                   <div>
@@ -227,11 +225,11 @@ export default function Home() {
               </div>
               <div className="space-y-4">
                 <form className="space-y-4">
-                  <Input placeholder="Nome" className="w-full" />
-                  <Input type="email" placeholder="Email" className="w-full" />
-                  <Input placeholder="Telefone" className="w-full" />
-                  <Textarea placeholder="Mensagem" className="w-full min-h-[150px]" />
-                  <Button className="w-full md:w-auto">Enviar Mensagem</Button>
+                  <Input placeholder="Nome" />
+                  <Input type="email" placeholder="Email" />
+                  <Input placeholder="Telefone" />
+                  <Textarea placeholder="Mensagem" />
+                  <Button className="w-full">Enviar Mensagem</Button>
                 </form>
               </div>
             </div>
@@ -241,8 +239,12 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="w-full border-t py-6">
-        <div className="container flex flex-col items-center justify-between gap-4 px-4 text-center md:flex-row md:text-left">
-          <p className="text-sm leading-loose">© 2024 TecnoNeto. Todos os direitos reservados.</p>
+        <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row md:py-0">
+          <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
+            <p className="text-center text-sm leading-loose md:text-left">
+              © 2024 TecnoNeto. Todos os direitos reservados.
+            </p>
+          </div>
           <div className="flex gap-4">
             <Link href="#" className="text-sm hover:text-primary">
               Política de Privacidade
